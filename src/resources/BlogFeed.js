@@ -8,7 +8,7 @@ export default {
         let _posts = _map(response.objects, function(i) {
           let temp = {
             title: i.title,
-            image: `https://drive.google.com/uc?export=view&id=${i.metadata.drivekey.key}`,
+            image: `https://drive.google.com/uc?export=view&id=${i.metadata.drivekey}`,
             published: i.created_at,
             author: i.metadata.author.title,
             id: i.slug
