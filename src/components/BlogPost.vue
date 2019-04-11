@@ -13,10 +13,12 @@
         <blockquote class="post__subtitle">{{ description }}</blockquote>
       </header>
 
-      <section class="post__body rte" v-html="content"></section>
-      
-      <section class="post__body rte" v-for="image in images">
-        <img v-bind:src="`${image}`">
+      <section class="post__body rte">
+        <div v-html="content">
+        </div>
+        <div v-for="image in images">
+          <img v-bind:src="`${image}`">
+        </div>
       </section>
       
       <footer class="post__footer">
