@@ -7,7 +7,8 @@ export default {
         let meta = {
           description: metadata.description,
           published: created_at,
-          author: metadata.author.title
+          author: metadata.author.title,
+          images: metadata.images
         }
         return mappers.merge({ title, content, ...meta })
       }
