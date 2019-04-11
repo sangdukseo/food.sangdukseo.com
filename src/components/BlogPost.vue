@@ -14,7 +14,7 @@
       </header>
 
       <section class="post__body rte" v-html="content"></section>
-
+      <img src="`https://drive.google.com/uc?export=view&id=${post}`">
       <footer class="post__footer">
         <vue-disqus v-if="commentsReady" shortname="food-11"
           :key="post" :identifier="post" :url="`https://food.sangdukseo.com/read/${post}`"/>
