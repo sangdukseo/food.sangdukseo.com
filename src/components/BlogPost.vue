@@ -15,9 +15,9 @@
 
       <section class="post__body rte" v-html="content"></section>
       
-      <div v-for="image in images">
+      <section class="post__body rte" v-for="image in images">
         <img v-bind:src="`${image}`">
-      </div>
+      </section>
       
       <footer class="post__footer">
         <vue-disqus v-if="commentsReady" shortname="food-11"
