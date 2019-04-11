@@ -8,7 +8,7 @@ export default {
           description: metadata.description,
           published: created_at,
           author: metadata.author.title,
-          images: metadata.images
+          images: metadata.images.images
         }
         return mappers.merge({ title, content, ...meta })
       }
