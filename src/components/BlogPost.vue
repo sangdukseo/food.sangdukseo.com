@@ -39,7 +39,8 @@ export default {
       content: '',
       published: '',
       description: '',
-      commentsReady: false
+      commentsReady: false,
+      drivekey: '',
     }
   },
 
