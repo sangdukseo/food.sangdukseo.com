@@ -17,7 +17,8 @@
         <div v-html="content">
         </div>
         <div class="content-image-container" v-for="image in images">
-          <img v-bind:src="`${image}`">
+          <img v-bind:src="`${image.image}`">
+          <div v-html="`${image.caption}`"></div>
         </div>
       </section>
       
