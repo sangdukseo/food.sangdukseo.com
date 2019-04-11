@@ -16,7 +16,7 @@
       <section class="post__body rte">
         <div v-html="content">
         </div>
-        <div v-for="image in images">
+        <div class="content-image-container" v-for="image in images">
           <img v-bind:src="`${image}`">
         </div>
       </section>
