@@ -14,6 +14,11 @@
       </header>
 
       <section class="post__body rte" v-html="content"></section>
+      
+      <div v-for="image in images">
+        <img v-bind:src="`${image}`">
+      </div>
+      
       <footer class="post__footer">
         <vue-disqus v-if="commentsReady" shortname="food-11"
           :key="post" :identifier="post" :url="`https://food.sangdukseo.com/read/${post}`"/>
