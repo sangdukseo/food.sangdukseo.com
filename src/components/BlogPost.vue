@@ -47,7 +47,7 @@ export default {
       published: '',
       description: '',
       commentsReady: false,
-      images: {}
+      images: []
     }
   },
 
