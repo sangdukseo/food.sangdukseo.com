@@ -40,7 +40,7 @@ export default {
       published: '',
       description: '',
       commentsReady: false,
-      drivekey: '',
+      drivekey: ''
     }
   },
 
