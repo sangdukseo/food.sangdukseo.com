@@ -17,10 +17,7 @@
         <div v-html="content">
         </div>
         <div class="separator"></div>
-        <div class="content-image-container" v-for="image in images">
-          <img v-bind:src="`${image.image}`">
-          <div v-html="`${image.caption}`"></div>
-        </div>
+        <vue-picture-swipe :items="images"></vue-picture-swipe>
       </section>
       
       <footer class="post__footer">
@@ -34,6 +31,7 @@
 <script>
 import VueDisqus from 'vue-disqus/VueDisqus'
 import { kebabify, prettyDate } from '../helpers'
+import VuePictureSwipe from 'vue-picture-swipe'
 
 export default {
   name: 'blog-post',
